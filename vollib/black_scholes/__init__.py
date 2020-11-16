@@ -87,7 +87,7 @@ def d1(S,K,t,r,sigma):  # see Hull, page 292
     denominator = sigma * numpy.sqrt(t)
 
     if not denominator:
-        print ''
+        print('')
     return numerator/denominator
 
 def d2(S,K,t,r,sigma):  # see Hull, page 292
@@ -216,4 +216,4 @@ def black_scholes(flag, S, K, t, r, sigma):
 if __name__=='__main__':  
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")

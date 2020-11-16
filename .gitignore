@@ -1,4 +1,5 @@
 # lets_be_rational/*.py
+.idea/
 lets_be_rational/*.so
 !lets_be_rational/__init__.py
 src/LetsBeRational_wrap.c

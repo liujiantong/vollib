@@ -52,16 +52,15 @@ class TestBlackScholesAgainstBenchmarkValues(unittest.TestCase):
             S,K,t,r,sigma = row['S'],row['K'],row['t'],row['R'],row['v']
             #self.assertTrue(
             #    almost_equal(
-            print        analytical.theta('c', S, K, t, r, sigma), row['CT']#, epsilon=.001
+            print(analytical.theta('c', S, K, t, r, sigma), row['CT']) #, epsilon=.001
             #    )
             #)
             #self.assertTrue(
             #    almost_equal(
-            print         analytical.theta('p', S, K, t, r, sigma), row['PT'] #, epsilon=.000001
+            print(analytical.theta('p', S, K, t, r, sigma), row['PT']) #, epsilon=.000001
             #    )
             #)
-            
-            
+
     def test_analytical_gamma(self):
 
         while self.tdi.has_next():
@@ -123,7 +122,7 @@ class TestBlackScholesAgainstBenchmarkValues(unittest.TestCase):
                 iv = implied_volatility(C, S, K, t, r, 'c')
                 self.assertTrue(almost_equal(sigma, iv, epsilon = .0001))
             except:
-                print 'could not calculate iv for ', C, S, K, t, r, 'c' 
+                print('could not calculate iv for ', C, S, K, t, r, 'c')
 
             iv = implied_volatility(P, S, K, t, r, 'p')
             self.assertTrue(almost_equal(sigma, iv, epsilon = .001) or (iv ==0.0))

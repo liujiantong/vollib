@@ -106,4 +106,4 @@ def implied_volatility(price, S, K, t, r, q, flag):
 if __name__=='__main__':
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")

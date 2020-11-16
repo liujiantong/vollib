@@ -68,10 +68,9 @@ def maybe_skip_member(app, what, name, obj, skip, options):
         'python_black_scholes_merton'
         
     ]
-        
-    
+
     if name in skip_list:
-        print 'skipping:', name
+        print('skipping:', name)
         
         return True
     else:

@@ -296,4 +296,4 @@ def rho(flag, S, K, t, r, sigma):
 if __name__=='__main__':  
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")

@@ -241,4 +241,4 @@ def implied_volatility_of_undiscounted_option_price_limited_iterations(
 if __name__=='__main__':
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")

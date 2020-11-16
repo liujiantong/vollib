@@ -35,7 +35,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = python_black_scholes(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon
                                 if not results_match:
-                                    print 'price mismatch:', flag, val1, val2
+                                    print('price mismatch:', flag, val1, val2)
                                 self.assertTrue(results_match)    
     
     def test_theta(self):
@@ -52,7 +52,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = ntheta(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon_for_theta
                                 if not results_match:
-                                    print 'theta mismatch:', flag, val1, val2
+                                    print('theta mismatch:', flag, val1, val2)
                                 self.assertTrue(results_match)
 
 
@@ -71,7 +71,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = ndelta(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon
                                 if not results_match:
-                                    print flag, val1, val2
+                                    print(flag, val1, val2)
                                 self.assertTrue(results_match)
                     
     def test_gamma(self):
@@ -88,7 +88,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = ngamma(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon
                                 if not results_match:
-                                    print flag, val1, val2
+                                    print(flag, val1, val2)
                                 self.assertTrue(results_match)
 
     def test_vega(self):
@@ -105,7 +105,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = nvega(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon
                                 if not results_match:
-                                    print flag, val1, val2
+                                    print(flag, val1, val2)
                                 self.assertTrue(results_match)
 
 
@@ -123,7 +123,7 @@ class testGreeks(unittest.TestCase):
                                 val2 = nrho(flag, S, K, t, r, sigma)
                                 results_match = abs(val1-val2)<epsilon
                                 if not results_match:
-                                    print flag, val1, val2
+                                    print(flag, val1, val2)
                                 self.assertTrue(results_match)
                             
 if __name__ == '__main__':

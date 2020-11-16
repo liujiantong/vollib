@@ -191,7 +191,7 @@ plot_numerical_vs_analytical('t','p')
 # -----------------------------------------------------------------------------
 # MAIN
 if __name__=='__main__':  
-    print 'running doctests'
+    print('running doctests')
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")

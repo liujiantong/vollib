@@ -50,4 +50,4 @@ class TestDataIterator(object):
 if __name__=='__main__':  
     import doctest
     if not doctest.testmod().failed:
-        print "Doctest passed"
+        print("Doctest passed")
